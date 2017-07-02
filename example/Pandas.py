@@ -6,7 +6,6 @@ Created on Sun Jun 25 21:15:20 2017
 """
 
 #Pandas tutorial basic
-from pandas import Series
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -35,3 +34,4 @@ print (df)
 df3 = df.reindex(index=dates[0:4], columns=list(df.columns) + ['E'])
 df3.loc[dates[0]:dates[1],'E'] = 1
 print(df3)
+

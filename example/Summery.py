@@ -6,7 +6,7 @@ Created on Mon Jun 26 14:20:00 2017
 """
 
 #Summery of Numpy SciPy Matplotlib and Pandas
-#%%timeit
+
 total = 0
 for i in range(1000):
     for j in range(1000):
