@@ -58,8 +58,8 @@ temp.py 基础操作练手
 
 参考资料：
 1.https://zhuanlan.zhihu.com/p/25742261
-2.https://zhuanlan.zhihu.com/p/25686876?refer=a2mia
-3.https://www.zhihu.com/search?type=content&q=Kaggle
+2.Kaggle 入门级别教材：https://zhuanlan.zhihu.com/p/25686876?refer=a2mia
+3.数据科学学习路径python版本：http://dataunion.org/9805.html?utm_source=tuicool
 4. Scipy：https://scipy.org/getting-started.html
 5.Ipython：http://ipython.org/documentation.html
 6.Regula Expression：https://developers.google.com/edu/python/set-up
@@ -67,5 +67,6 @@ temp.py 基础操作练手
 8.numpy 数组 切片 列表 索引 ：http://www.scipy-lectures.org/intro/numpy/array_object.html#what-are-numpy-and-numpy-arrays
 9.numpy array  documentation: https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html#adding-and-removing-elements
 10.matplotlib文档 :http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
+11.Panda
 
 
