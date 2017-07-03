@@ -51,7 +51,9 @@ Panda部分    ok
 
 代码部分会随着我做的东西增加说明：
 temp.py 基础操作练手
-
+pandas.py
+pandas2.py
+建议使用数据库为：sqlite3 mysql-connector 暂时没有windows版本
 
 
 
