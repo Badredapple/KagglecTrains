@@ -55,13 +55,24 @@ pandas.py
 pandas2.py
 建议使用数据库为：sqlite3 mysql-connector 暂时没有windows版本
 
+------------------7/3---------------------
+今天继续练习了numpy 和Pandas 
+涉及到的操作基本上都是numpy对 python下主要的数据结构： 表， 数组， 元组，矩阵的操作
+少部分为Scipy中对线性函数的操作和使用SVD 特征根求矩阵一般解的方法
+接下来估计会开始正式的Kaggle 预热已经做的差不多了
+是时候建立神经网络，深度学习算法和Kaggle的课程了
 
 
 
-参考资料：
+参考教程网站：
 1.https://zhuanlan.zhihu.com/p/25742261
 2.Kaggle 入门级别教材：https://zhuanlan.zhihu.com/p/25686876?refer=a2mia
 3.数据科学学习路径python版本：http://dataunion.org/9805.html?utm_source=tuicool
+4.Bigdata 资料网站：https://www.analyticsvidhya.com/
+
+
+
+参考链接，文档：
 4. Scipy：https://scipy.org/getting-started.html
 5.Ipython：http://ipython.org/documentation.html
 6.Regula Expression：https://developers.google.com/edu/python/set-up
@@ -69,6 +80,5 @@ pandas2.py
 8.numpy 数组 切片 列表 索引 ：http://www.scipy-lectures.org/intro/numpy/array_object.html#what-are-numpy-and-numpy-arrays
 9.numpy array  documentation: https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html#adding-and-removing-elements
 10.matplotlib文档 :http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
-11.Panda
-
+11.Panda文档：http://pandas.pydata.org/pandas-docs/stable/10min.html
 
