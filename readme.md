@@ -64,11 +64,22 @@ pandas2.py
 
 
 
+接下来是对Scikit-learn 课程的学习
+Scikit-learn库包含了深度学习中比较大的几个重点算法结构，是我接下来学习的重点内容
+
+-------------------------------7/6------------------------
+学习Scikit-learn的过程：
+使用书籍《Hand-on Scikit-learn and Tensorflow》
+生成的代码见ml-example。
+
+
 参考教程网站：
 1.https://zhuanlan.zhihu.com/p/25742261
 2.Kaggle 入门级别教材：https://zhuanlan.zhihu.com/p/25686876?refer=a2mia
 3.数据科学学习路径python版本：http://dataunion.org/9805.html?utm_source=tuicool
 4.Bigdata 资料网站：https://www.analyticsvidhya.com/
+5.Scikit-learn用户文档，中文版本，只可以参考： gitbook：https://xacecask2.gitbooks.io/scikit-learn-user-guide-chinese-version/content/
+6.Scikit-learn库 CS109 github ：http://cs109.github.io/2014/pages/schedule.html
 
 
 
