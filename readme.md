@@ -27,7 +27,7 @@ python基础复习
 在第一步当中，我选择使用的是AnaConda ，这个库包括了最基本的Numpy 和Scipy 在这两个的基础下。
 
 
------------------2017/6/25
+-----------------2017/6/25\n
 numpy 基础部分：
 1.数组结构 ok
 2.切片划分操作  ok
@@ -42,7 +42,7 @@ matplotlib基础部分
 Panda部分    ok
 
 
--------------------------20176/26
+-------------------------20176/26\n
 今天计划把之前2天的学的东西复习下，然后以《OReilly.Python.Data.Science.Handbook.2016.11.pdf》为
 结构化，做一个总结
 
@@ -55,7 +55,7 @@ pandas.py
 pandas2.py
 建议使用数据库为：sqlite3 mysql-connector 暂时没有windows版本
 
-------------------7/3---------------------
+------------------7/3---------------------\n
 今天继续练习了numpy 和Pandas 
 涉及到的操作基本上都是numpy对 python下主要的数据结构： 表， 数组， 元组，矩阵的操作
 少部分为Scipy中对线性函数的操作和使用SVD 特征根求矩阵一般解的方法
@@ -67,10 +67,24 @@ pandas2.py
 接下来是对Scikit-learn 课程的学习
 Scikit-learn库包含了深度学习中比较大的几个重点算法结构，是我接下来学习的重点内容
 
--------------------------------7/6------------------------
+-------------------------------7/6------------------------\n
 学习Scikit-learn的过程：
 使用书籍《Hand-on Scikit-learn and Tensorflow》
 生成的代码见ml-example。
+
+
+
+
+---------------------------7/8----------------------------\n
+今天讨论的主要方向是 特征工程(feature engine) ，见理论文章：特征工程
+代码在feature-engine
+参考教程：
+知乎：https://www.zhihu.com/question/47873540
+
+
+
+
+----------------------------7/10-------------------------------------
 
 
 参考教程网站：
@@ -84,12 +98,12 @@ Scikit-learn库包含了深度学习中比较大的几个重点算法结构，�
 
 
 参考链接，文档：
-4. Scipy：https://scipy.org/getting-started.html
-5.Ipython：http://ipython.org/documentation.html
-6.Regula Expression：https://developers.google.com/edu/python/set-up
-7.python3cookbook ：http://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
-8.numpy 数组 切片 列表 索引 ：http://www.scipy-lectures.org/intro/numpy/array_object.html#what-are-numpy-and-numpy-arrays
-9.numpy array  documentation: https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html#adding-and-removing-elements
-10.matplotlib文档 :http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
+4. Scipy：https://scipy.org/getting-started.html \n
+5.Ipython：http://ipython.org/documentation.html \n 
+6.Regula Expression：https://developers.google.com/edu/python/set-up \n
+7.python3cookbook ：http://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html \n
+8.numpy 数组 切片 列表 索引 ：http://www.scipy-lectures.org/intro/numpy/array_object.html#what-are-numpy-and-numpy-arrays \n
+9.numpy array  documentation: https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html#adding-and-removing-elements \n
+10.matplotlib文档 :http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb \n
 11.Panda文档：http://pandas.pydata.org/pandas-docs/stable/10min.html
 

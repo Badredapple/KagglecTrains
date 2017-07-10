@@ -34,6 +34,19 @@ housing_num = housing.drop("ocean_proximity",axis = 1)
 imputer.fit(housing_num)
 #print(imputer.statistics_)
 #print(housing_num.median().values)
+#from strat_train_set
+from sklearn.model_selection import StratifiedShuffleSplit
+split = StratifiedShuffleSplit(n_splits = 1, test_size = 0.2, random_state = 42)
+for train_index, test_index in split.split(housing, housing["income_cat"]):
+        strat_train_set = housing.loc[train_index]
+        strat_test_set = housing.loc[test_index]
+        
+ #remove the income_cat so we could use data in original state
+for set in (strat_train_set, strat_test_set):
+    set.drop(["income_cat"], axis = 1, inplace = True)
+##Prepare Data for Machine Learning Algprithms:
+housing = strat_train_set.drop("median_house_value", axis =1)
+housing_labels = strat_train_set["median_house_value"].copy()
  
 X=imputer.transform(housing_num)
  
@@ -65,8 +78,8 @@ print(housing_cat_1hot)
 from sklearn.base import BaseEstimator, TransformerMixin
 rooms_ix, bedrooms_ix,population_ix, household_ix = 3,4,5,6
 class CombindedAttributesAdder(BaseEstimator, TransformerMixin):
-   # def __init__(self, add_bedroom_per_room =True):
-   #     self.add_bedrooms_per_room = add_bedrooms_per_room
+    def __init__(self, add_bedrooms_per_room =True):
+       self.add_bedrooms_per_room = add_bedrooms_per_room
     def fit(self,X, y = None):
         return self
     def transform(self, X, y=None):
@@ -100,43 +113,50 @@ housing_num_tr = num_pipeline.fit_transform(housing_num)
 
 
 ##Join two pipeline into together:
-from sklearn,pipeline import FeatureUnion
+    
+from sklearn.base import BaseEstimator,TransformerMixin
+
+class DataFrameSelector(BaseEstimator, TransformerMixin):
+    def __init(self,attribute_names):
+        self.attribute_names = attribute_names
+    def fit(self,X,y=None):
+        return self
+    def transform(self,X):
+        return X[self.attribute_names].values
+
+
+from sklearn.pipeline import FeatureUnion
 
 num_attribs = list(housing_num)
 cat_attribs = ["ocean_proximity"]
 
 num_pipeline = Pipeline([
-            ('selector',DataFrameSelextor(num_attribs)),
+            ('selector', DataFrameSelector(num_attribs)),
             ('imputer',Imputer(stragtegy = "median")),
-            ('attribs_adder',CombinedAttributesAdder())
+            ('attribs_adder',CombindedAttributesAdder())
             ('std_scaler', StandardScaler()),
         ])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+cat_pipeline = Pipeline([
+        ('selector', DataFrameSelector(cat_attribs)),
+        ('label_binarizer', LabelBinarizer()),
+        ])
+full_pipeline = FeatureUnion(transformer_list=[
+        ("num_pipeline",num_pipeline),
+        ("cat_pipeline",cat_pipeline),
+        
+        ])
 
 ###Now will try to select and train a model                                                                     
  #Train and Evaluate your training Set
-#from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression
 
-#lin_reg = LinearRegression()
-#lin_reg.fit(housing_prepared, housing_labels)
+lin_reg = LinearRegression()
+lin_reg.fit(housing_prepared, housing_labels)
+
 #output some instances:
-#some_data = housing.iloc[:5]
-#some_labels = housing_labels.iloc[:5]
-
- 
+some_data = housing.iloc[:5]
+some_labels = housing_labels.iloc[:5]
  
  
  
