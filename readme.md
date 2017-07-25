@@ -80,6 +80,9 @@ Scikit-learn库包含了深度学习中比较大的几个重点算法结构，�
 代码在feature-engine
 参考教程：
 知乎：https://www.zhihu.com/question/47873540
+特征工程 解析思路
+1. 判断 单因子变量  还是多因子变量
+2.判断使用PCA降维 还是使用LDA降维
 
 
 
